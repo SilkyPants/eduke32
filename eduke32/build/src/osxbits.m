@@ -91,6 +91,15 @@ char *osx_getsupportdir(int32_t local)
     return returnpath;
 }
 
+const char *osx_getapplocation(void)
+{
+    NSString *currentDirectory = [[NSBundle mainBundle] bundlePath];
+    
+    currentDirectory = [currentDirectory stringByAppendingPathComponent:@"/.."];
+    
+    return [currentDirectory UTF8String];
+}
+
 char *osx_getappdir(void)
 {
     CFBundleRef mainBundle;

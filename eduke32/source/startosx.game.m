@@ -21,6 +21,7 @@ static struct {
     int fullscreen;
     int xdim3d, ydim3d, bpp3d;
     int forcesetup;
+    int autoload;
     int samplerate, bitspersample, channels;
 } settings;
 
@@ -38,6 +39,7 @@ static struct soundQuality_t {
 
     IBOutlet NSButton *alwaysShowButton;
     IBOutlet NSButton *fullscreenButton;
+    IBOutlet NSButton *autoLoadButton;
     IBOutlet NSTextView *messagesView;
     IBOutlet NSTabView *tabView;
     IBOutlet NSPopUpButton *videoMode3DPUButton;
@@ -219,8 +221,9 @@ static struct soundQuality_t {
     if (row >= 0) {
         settings.grp = [[gamelistsrc grpAtIndex:row] entryptr];
     }
-
+    
     settings.forcesetup = [alwaysShowButton state] == NSOnState;
+    settings.autoload = [autoLoadButton state] == NSOnState;
 
     [nsapp stopModal];
 }
@@ -231,6 +234,7 @@ static struct soundQuality_t {
 
     [fullscreenButton setState: (settings.fullscreen ? NSOnState : NSOffState)];
     [alwaysShowButton setState: (settings.forcesetup ? NSOnState : NSOffState)];
+    [autoLoadButton setState: (settings.autoload ? NSOnState : NSOffState)];
     [self populateVideoModes:YES];
     [self populateSoundQuality:YES];
 
@@ -419,6 +423,7 @@ int startwin_run(void)
     settings.bitspersample = ud.config.NumBits;
     settings.channels = ud.config.NumChannels;
     settings.forcesetup = ud.config.ForceSetup;
+    settings.autoload = !ud.config.NoAutoLoad;
     settings.grp = g_selectedGrp;
 
     [startwin setupRunMode];
@@ -445,6 +450,7 @@ int startwin_run(void)
         ud.config.NumBits = settings.bitspersample;
         ud.config.NumChannels = settings.channels;
         ud.config.ForceSetup = settings.forcesetup;
+        ud.config.NoAutoLoad = !settings.autoload;
         g_selectedGrp = settings.grp;
     }
 

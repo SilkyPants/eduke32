@@ -772,6 +772,9 @@ void G_AddSearchPaths(void)
     int32_t i;
     char *applications[] = { osx_getapplicationsdir(0), osx_getapplicationsdir(1) };
     char *support[] = { osx_getsupportdir(0), osx_getsupportdir(1) };
+    const char *appDir = osx_getapplocation();
+    
+    addsearchpath(appDir);
 
     for (i = 0; i < 2; i++)
     {

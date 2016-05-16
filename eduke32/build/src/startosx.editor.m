@@ -8,6 +8,7 @@ static id nsapp;
 {
     IBOutlet NSButton *alwaysShowButton;
     IBOutlet NSButton *fullscreenButton;
+    IBOutlet NSButton *autoLoadButton;
     IBOutlet NSTextView *messagesView;
     IBOutlet NSTabView *tabView;
     IBOutlet NSComboBox *videoModeCbox;
@@ -29,6 +30,14 @@ static id nsapp;
 @end
 
 @implementation StartupWinController
+
+- (IBAction)autoLoadClicked:(id)sender
+{
+    UNREFERENCED_PARAMETER(sender);
+    
+    settings.autoload = [autoLoadButton state] == NSOnState;
+    
+}
 
 - (IBAction)alwaysShowClicked:(id)sender
 {
