@@ -438,6 +438,14 @@
 		20FD1D511C44E4E700C2E553 /* colmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 20FD1D501C44E4E700C2E553 /* colmatch.c */; };
 		20FD1D521C44E4E700C2E553 /* colmatch.c in Sources */ = {isa = PBXBuildFile; fileRef = 20FD1D501C44E4E700C2E553 /* colmatch.c */; };
 		20FD1D6B1C44E64700C2E553 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20FD1D6A1C44E64700C2E553 /* GameController.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		441104561CE971B100C2B060 /* libFLAC.8.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4411044D1CE971B100C2B060 /* libFLAC.8.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		441104581CE971B100C2B060 /* libogg.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4411044F1CE971B100C2B060 /* libogg.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		441104591CE971B100C2B060 /* libpng16.16.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 441104501CE971B100C2B060 /* libpng16.16.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4411045A1CE971B100C2B060 /* libSDL2_mixer-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 441104511CE971B100C2B060 /* libSDL2_mixer-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4411045B1CE971B100C2B060 /* libSDL2-2.0.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 441104521CE971B100C2B060 /* libSDL2-2.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4411045C1CE971B100C2B060 /* libvorbis.0.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 441104531CE971B100C2B060 /* libvorbis.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		4411045E1CE971B100C2B060 /* libvorbisfile.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 441104551CE971B100C2B060 /* libvorbisfile.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		441104621CE9757500C2B060 /* libz.1.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 441104611CE9757500C2B060 /* libz.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -519,6 +527,26 @@
 			remoteInfo = "Static Library";
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4411044C1CE9718500C2B060 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				441104561CE971B100C2B060 /* libFLAC.8.dylib in CopyFiles */,
+				441104581CE971B100C2B060 /* libogg.0.dylib in CopyFiles */,
+				441104591CE971B100C2B060 /* libpng16.16.dylib in CopyFiles */,
+				4411045A1CE971B100C2B060 /* libSDL2_mixer-2.0.0.dylib in CopyFiles */,
+				4411045B1CE971B100C2B060 /* libSDL2-2.0.0.dylib in CopyFiles */,
+				4411045C1CE971B100C2B060 /* libvorbis.0.dylib in CopyFiles */,
+				4411045E1CE971B100C2B060 /* libvorbisfile.3.dylib in CopyFiles */,
+				441104621CE9757500C2B060 /* libz.1.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0008E64B19F1A66E0091588D /* EDuke32.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EDuke32.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -817,6 +845,23 @@
 		20FD1D471C44E4BE00C2E553 /* colmatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = colmatch.h; path = ../../build/include/colmatch.h; sourceTree = SOURCE_ROOT; };
 		20FD1D501C44E4E700C2E553 /* colmatch.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = colmatch.c; path = ../../build/src/colmatch.c; sourceTree = SOURCE_ROOT; };
 		20FD1D6A1C44E64700C2E553 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/GameController.framework; sourceTree = DEVELOPER_DIR; };
+		441104371CE96E8800C2B060 /* libFLAC.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libFLAC.8.dylib; path = ../../../../../../../../usr/local/lib/libFLAC.8.dylib; sourceTree = "<group>"; };
+		441104381CE96E8800C2B060 /* libFLAC++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libFLAC++.6.dylib"; path = "../../../../../../../../usr/local/lib/libFLAC++.6.dylib"; sourceTree = "<group>"; };
+		441104391CE96E8800C2B060 /* libogg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libogg.0.dylib; path = ../../../../../../../../usr/local/lib/libogg.0.dylib; sourceTree = "<group>"; };
+		4411043A1CE96E8800C2B060 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = ../../../../../../../../usr/local/lib/libpng16.16.dylib; sourceTree = "<group>"; };
+		4411043B1CE96E8800C2B060 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "../../../../../../../../usr/local/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<group>"; };
+		4411043C1CE96E8800C2B060 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "../../../../../../../../usr/local/lib/libSDL2-2.0.0.dylib"; sourceTree = "<group>"; };
+		4411043D1CE96E8800C2B060 /* libvorbis.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbis.0.dylib; path = ../../../../../../../../usr/local/lib/libvorbis.0.dylib; sourceTree = "<group>"; };
+		4411043E1CE96E8800C2B060 /* libvorbisenc.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbisenc.2.dylib; path = ../../../../../../../../usr/local/lib/libvorbisenc.2.dylib; sourceTree = "<group>"; };
+		4411043F1CE96E8800C2B060 /* libvorbisfile.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbisfile.3.dylib; path = ../../../../../../../../usr/local/lib/libvorbisfile.3.dylib; sourceTree = "<group>"; };
+		4411044D1CE971B100C2B060 /* libFLAC.8.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libFLAC.8.dylib; path = /usr/local/lib/libFLAC.8.dylib; sourceTree = "<absolute>"; };
+		4411044F1CE971B100C2B060 /* libogg.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libogg.0.dylib; path = /usr/local/lib/libogg.0.dylib; sourceTree = "<absolute>"; };
+		441104501CE971B100C2B060 /* libpng16.16.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpng16.16.dylib; path = /usr/local/lib/libpng16.16.dylib; sourceTree = "<absolute>"; };
+		441104511CE971B100C2B060 /* libSDL2_mixer-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2_mixer-2.0.0.dylib"; path = "/usr/local/lib/libSDL2_mixer-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		441104521CE971B100C2B060 /* libSDL2-2.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libSDL2-2.0.0.dylib"; path = "/usr/local/lib/libSDL2-2.0.0.dylib"; sourceTree = "<absolute>"; };
+		441104531CE971B100C2B060 /* libvorbis.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbis.0.dylib; path = /usr/local/lib/libvorbis.0.dylib; sourceTree = "<absolute>"; };
+		441104551CE971B100C2B060 /* libvorbisfile.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libvorbisfile.3.dylib; path = /usr/local/lib/libvorbisfile.3.dylib; sourceTree = "<absolute>"; };
+		441104611CE9757500C2B060 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = /Users/dsilk/Desktop/EDuke32.app/Contents/Library/libz.1.dylib; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -999,6 +1044,15 @@
 		0008E64D19F1A66E0091588D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				441104371CE96E8800C2B060 /* libFLAC.8.dylib */,
+				441104381CE96E8800C2B060 /* libFLAC++.6.dylib */,
+				441104391CE96E8800C2B060 /* libogg.0.dylib */,
+				4411043A1CE96E8800C2B060 /* libpng16.16.dylib */,
+				4411043B1CE96E8800C2B060 /* libSDL2_mixer-2.0.0.dylib */,
+				4411043C1CE96E8800C2B060 /* libSDL2-2.0.0.dylib */,
+				4411043D1CE96E8800C2B060 /* libvorbis.0.dylib */,
+				4411043E1CE96E8800C2B060 /* libvorbisenc.2.dylib */,
+				4411043F1CE96E8800C2B060 /* libvorbisfile.3.dylib */,
 				2085BEB91A8F23B9002BF4CE /* libSystem.dylib */,
 				0013832819F366720007DA6C /* libc++.dylib */,
 				0013832619F366440007DA6C /* CoreMotion.framework */,
@@ -1404,6 +1458,7 @@
 		00970E1A19F2074300873EB9 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				441104631CE9815400C2B060 /* OSX Dynamic Libs */,
 				00970E1E19F2076B00873EB9 /* libSDL2_mixer.a */,
 				00970E1F19F2076B00873EB9 /* libSDL2.a */,
 				00970E1B19F2076B00873EB9 /* libFLAC.a */,
@@ -1431,6 +1486,21 @@
 			name = etcpak;
 			path = ../../source/android/etcpak;
 			sourceTree = SOURCE_ROOT;
+		};
+		441104631CE9815400C2B060 /* OSX Dynamic Libs */ = {
+			isa = PBXGroup;
+			children = (
+				441104611CE9757500C2B060 /* libz.1.dylib */,
+				4411044D1CE971B100C2B060 /* libFLAC.8.dylib */,
+				4411044F1CE971B100C2B060 /* libogg.0.dylib */,
+				441104501CE971B100C2B060 /* libpng16.16.dylib */,
+				441104511CE971B100C2B060 /* libSDL2_mixer-2.0.0.dylib */,
+				441104521CE971B100C2B060 /* libSDL2-2.0.0.dylib */,
+				441104531CE971B100C2B060 /* libvorbis.0.dylib */,
+				441104551CE971B100C2B060 /* libvorbisfile.3.dylib */,
+			);
+			name = "OSX Dynamic Libs";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -1639,6 +1709,8 @@
 				0008E64719F1A66E0091588D /* Sources */,
 				0008E64819F1A66E0091588D /* Frameworks */,
 				0008E64919F1A66E0091588D /* Resources */,
+				4411044C1CE9718500C2B060 /* CopyFiles */,
+				4411045F1CE971C300C2B060 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1913,6 +1985,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4411045F1CE971C300C2B060 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Need to fix up some of the libs so they get bundled correctly\ninstall_name_tool -change /usr/local/opt/flac/lib/libFLAC.8.dylib @executable_path/../Frameworks/libFLAC.8.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/libogg/lib/libogg.0.dylib @executable_path/../Frameworks/libogg.0.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/libvorbis/lib/libvorbis.0.dylib @executable_path/../Frameworks/libvorbis.0.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/libvorbis/lib/libvorbisfile.3.dylib @executable_path/../Frameworks/libvorbisfile.3.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/sdl2_mixer/lib/libSDL2_mixer-2.0.0.dylib @executable_path/../Frameworks/libSDL2_mixer-2.0.0.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/sdl2/lib/libSDL2-2.0.0.dylib @executable_path/../Frameworks/libSDL2-2.0.0.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/libpng/lib/libpng16.16.dylib @executable_path/../Frameworks/libpng16.16.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\ninstall_name_tool -change /usr/local/opt/zlib/lib/libz.1.dylib @executable_path/../Frameworks/libz.1.dylib \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_PATH\"\n\n# Fix up Vorbis\ninstall_name_tool -change /usr/local/lib/libogg.0.dylib @executable_path/../Frameworks/libogg.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\"/libvorbis.0.dylib\ninstall_name_tool -change /usr/local/lib/libogg.0.dylib @executable_path/../Frameworks/libogg.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\"/libvorbisfile.3.dylib\ninstall_name_tool -change /usr/local/Cellar/libvorbis/1.3.5/lib/libvorbis.0.dylib @executable_path/../Frameworks/libvorbis.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\"/libvorbisfile.3.dylib\n\n# Fix up SDL\ninstall_name_tool -change /usr/local/opt/sdl2/lib/libSDL2-2.0.0.dylib @executable_path/../Frameworks/libSDL2-2.0.0.dylib \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH\"/libSDL2_mixer-2.0.0.dylib";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0008E64719F1A66E0091588D /* Sources */ = {
