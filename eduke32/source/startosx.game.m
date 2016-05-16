@@ -243,14 +243,16 @@ static struct soundQuality_t {
     [[gameList documentView] setDataSource:gamelistsrc];
     [[gameList documentView] deselectAll:nil];
 
-    int row = [gamelistsrc findIndexForGrpname:[NSString stringWithCString:settings.grp->filename encoding:NSUTF8StringEncoding]];
-    if (row >= 0) {
-        [[gameList documentView] scrollRowToVisible:row];
-#if defined(MAC_OS_X_VERSION_10_3) && (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_3)
-        [[gameList documentView] selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
-#else
-        [[gameList documentView] selectRow:row byExtendingSelection:NO];
-#endif
+    if (settings.grp) {
+        int row = [gamelistsrc findIndexForGrpname:[NSString stringWithCString:settings.grp->filename encoding:NSUTF8StringEncoding]];
+        if (row >= 0) {
+            [[gameList documentView] scrollRowToVisible:row];
+    #if defined(MAC_OS_X_VERSION_10_3) && (MAC_OS_X_VERSION_MIN_REQUIRED >= MAC_OS_X_VERSION_10_3)
+            [[gameList documentView] selectRowIndexes:[NSIndexSet indexSetWithIndex:row] byExtendingSelection:NO];
+    #else
+            [[gameList documentView] selectRow:row byExtendingSelection:NO];
+    #endif
+        }
     }
 
     [cancelButton setEnabled:true];
